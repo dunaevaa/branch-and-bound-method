@@ -50,6 +50,7 @@ Iteration 3
 ### Branch and bound method
 ![tree](diagram.png)
 
+
     Divide to tasks: x1 <= 2.000 and x1 >= 3.000
     Start solving task:
      5.00x1 + 6.00x2 + 1.00x3 ->  MAX
@@ -58,7 +59,7 @@ Iteration 3
      0.50x2 + x3 <= 8.0
      x1 <= 2.0
 
-Iteration 1
+Iteration 0
   |  |   x1   |   x2   |   x3   |   x4   |   x5   |   x6   |   x7   |    b   |
 |---|---|---|---|---|---|---|---|---|
   x4 |   2.00 |   1.00 |   1.00 |   1.00 |   0.00 |   0.00 |   0.00 |   5.00 |
@@ -80,6 +81,7 @@ Iteration 4
      
 ####  Solve: [2.  0.5 0.5] , F: 13.5 
 
+
      Divide to tasks: x2 <= 0.000 and x2 >= 1.000
         Start solving task:
          5.00x1 + 6.00x2 + 1.00x3 ->  MAX
@@ -89,7 +91,7 @@ Iteration 4
          x1 <= 2.0
          x2 <= 0.0
 
-Iteration 1
+Iteration 0
   |  |   x1   |   x2   |   x3   |   x4   |   x5   |   x6   |   x7   |   x8   |    b   |
 |---|---|---|---|---|---|---|---|---|---|
   x4 |   2.00 |   1.00 |   1.00 |   1.00 |   0.00 |   0.00 |   0.00 |   0.00 |   5.00 |
@@ -112,6 +114,7 @@ Iteration 4
    x |   2.00 |   0.00 |   1.00 |   0.00 |   1.00 |   7.00 |   0.00 |   0.00 |
          
  #### Solve: [2. 0. 1.] , F: 11.0 
+
 
 
         Start solving task:
@@ -146,6 +149,7 @@ Iteration 3
         
 ####  Solve: [1. 1. 2.] , F: 13.0 
 
+    
     
     Start solving task:
      5.00x1 + 6.00x2 + 1.00x3 ->  MAX
