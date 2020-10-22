@@ -2,8 +2,8 @@ import numpy as np
 from copy import deepcopy
 from itertools import product
 
-MAX_MODE = 'MAX' 
-MIN_MODE = 'MIN' 
+MAX_MODE = 'MAX'
+MIN_MODE = 'MIN'
 
 
 class SimplexMethod:
@@ -67,6 +67,7 @@ class SimplexMethod:
 
             self.gauss(row, column)  # выполняем исключение гаусса
             self.calculate_f()
+            self.print_table()
 
 
     # выполнение шага метода гаусса
@@ -108,7 +109,7 @@ class SimplexMethod:
         for i in range(self.restrictions_count):
             x[self.basis[i]] = self.table[i][-1]
 
-        return x  
+        return x  # возвращаем полученное решение
 
     # получение первого вещественного решения
     def get_first_real(self, x):
